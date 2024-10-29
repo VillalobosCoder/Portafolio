@@ -5,28 +5,52 @@
 @tailwind utilities;
 
 :root {
-  --background: #fefefe;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #d1d5db;
+  font-family: "poppins", sans-serif;
+  color-scheme: light;
 }
 
-/*@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}*/
+.light-theme {
+  --background: #fefefe;
+  --foreground: #1f2937;
+  color-scheme: light;
+}
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
-:root {
-  font-family: "poppins", sans-serif;
-  color-scheme: white;
+::-webkit-scrollbar {
+  width: 5px;
 }
 
-html {
-  scroll-behavior: smooth;
+::-webkit-scrollbar-thumb {
+  background: #6e3792;
+  border-radius: 10px;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.titleShine {
+  background: linear-gradient(
+    to left,
+    #ceabeb 20%,
+    #7953cd 30%,
+    #7953cd 70%,
+    #ceabeb 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 4s ease-in-out infinite;
 }

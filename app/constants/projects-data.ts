@@ -27,7 +27,7 @@ export const projectsData = [
     title: "Compilador",
     description: "Este proyecto es una implementación parcial de un compilador desarrollado como parte de un proyecto escolar. El objetivo principal es profundizar en la lógica de programación utilizando el lenguaje Java, y abordar algunas de las etapas fundamentales de un compilador: Analizador Léxico, Analizador Sintáctico, Analizador Semántico y Generador de Código Intermedio.",
     image: CompiladorImage,
-    linkGit: "https://www.google.com",
+    linkGit: "https://github.com/VillalobosCoder/Compilador",
     likDep: "https://www.google.com",
     dev: false,
     tecs: [TAGS.Java],

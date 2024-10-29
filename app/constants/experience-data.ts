@@ -5,6 +5,7 @@ import TecLogo from "../assets/logos/tec.webp"
 export const experienceData = [
     {
         title: "Arsova",
+        link: "https://arsova.mx/",
         logo: ArsovaLogo,
         position: "Desarrollador Frontend y movil",
         date: "Junio 2024 - Actualidad",
@@ -12,6 +13,7 @@ export const experienceData = [
     },
     {
         title: "IESoluciones",
+        link:"https://www.ie-soluciones.com/",
         logo: IESolucionesLogo,
         position: "Desarrollador movil (Android)",
         date: "Enero 2023 - Julio 2023",
@@ -19,6 +21,7 @@ export const experienceData = [
     },
     {
         title: "Instituto Tecnologico de Culiacan",
+        link: "https://www.culiacan.tecnm.mx/",
         logo: TecLogo,
         position: "Estudiante",
         date: "Agosto 2020 - Actualidad",
