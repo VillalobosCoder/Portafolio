@@ -9,6 +9,7 @@ import TypeScript from "../assets/icons/TypeScript";
 import Vite from "../assets/icons/Vite";
 import CompiladorImage from "../assets/projects/Compilador.png";
 import VrWondersTeamImage from "../assets/projects/VrWonders.png";
+import ChatApp from "../assets/projects/ChatApp.png"
 
 const TAGS = {
   Java: { name: "Java", classL: "bg-orange-900", icon: Java },
@@ -28,7 +29,7 @@ export const projectsData = [
     description: "Este proyecto es una implementación parcial de un compilador desarrollado como parte de un proyecto escolar. El objetivo principal es profundizar en la lógica de programación utilizando el lenguaje Java, y abordar algunas de las etapas fundamentales de un compilador: Analizador Léxico, Analizador Sintáctico, Analizador Semántico y Generador de Código Intermedio.",
     image: CompiladorImage,
     linkGit: "https://github.com/VillalobosCoder/Compilador",
-    likDep: "https://www.google.com",
+    likDep: "",
     dev: false,
     tecs: [TAGS.Java],
 
@@ -37,7 +38,7 @@ export const projectsData = [
     title: "VrWondersTeam",
     description: "Este proyecto es una landing page como parte de un proyecto escolar para una feria de ingenierias, la cual se realizo para promocionar y dar mas informacion de nuestro proyecto llamado VrWonders.",
     image: VrWondersTeamImage,
-    linkGit: "",
+    linkGit: "https://github.com/VillalobosCoder/VrWondersTeam",
     likDep: "https://vrwondersteam.onrender.com/",
     dev: true,
     tecs: [TAGS.React, TAGS.Vite, TAGS.TypeScript, TAGS.Tailwind],
@@ -45,9 +46,9 @@ export const projectsData = [
   {
     title: "ChatApp",
     description: "Este proyecto escolar es una aplicación de chat en tiempo real, desarrollada con React, Express, Socket.io y MongoDB. La aplicación permite a los usuarios registrarse, iniciar sesión y chatear con en tiempo real.",
-    image: CompiladorImage,
-    linkGit: "https://www.google.com",
-    likDep: "https://www.google.com",
+    image: ChatApp,
+    linkGit: "https://github.com/VillalobosCoder/Proyecto-chat",
+    likDep: "",
     dev: false,
     tecs: [TAGS.React, TAGS.Express, TAGS.MongoDB, TAGS.JavaScript, TAGS.Tailwind],
   },

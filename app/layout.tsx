@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 export const metadata: Metadata = {
   title: "Portafolio",
-  description: "Portafolio VillalobosCoders",
+  description: "Portafolio VillalobosCoder",
+  icons: {
+    icon: "/loguito.png",
+  },
 };
 
 export default function RootLayout({

@@ -3,12 +3,14 @@
 import { navItemsEs } from "../constants/navbar-data";
 import { FaBars, FaXmark, FaMoon, FaLanguage, FaSun } from "react-icons/fa6";
 import { useEffect, useState } from "react";
+import { useLanguage } from "../context/lenguage-context";
 
 function Navbar() {
     const [menuDrawerIsOpen, setMenuDrawerIsOpen] = useState(false);
     const handleNavbar = () => { setMenuDrawerIsOpen(!menuDrawerIsOpen); }
     const [isDarkMode, setIsDarkMode] = useState(true);
     const [activeSection, setActiveSection] = useState('');
+    const { language, toggleLanguage } = useLanguage();
 
     useEffect(() => {
         if (!isDarkMode) {
@@ -69,8 +71,8 @@ function Navbar() {
                         <li className={`cursor-pointer text-xl hover:transition-all duration-500 transform hover:scale-110 ${isDarkMode ? 'hover:text-yellow-200' : 'hover:text-blue-800'} `} onClick={handleTheme}>
                             {isDarkMode ? <FaSun /> : <FaMoon />}
                         </li>
-                        <li className="cursor-pointer text-xl hover:transition-all duration-500 transform hover:scale-110 hover:text-violet-600">
-                            <FaLanguage />
+                        <li className="cursor-pointer text-xl hover:transition-all duration-500 transform hover:scale-110 hover:text-violet-600" onClick={toggleLanguage}>
+                            <FaLanguage/>
                         </li>
                     </ul>
                     <div className="lg:hidden md:flex flex-col justify-end">
@@ -91,6 +93,7 @@ function Navbar() {
                                 {isDarkMode ? <FaSun /> : <FaMoon />}
                             </li>
                         </ul>
+                        
                     </div>
                 )}
             </div>
