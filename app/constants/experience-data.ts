@@ -1,5 +1,5 @@
 import ArsovaLogo from "../assets/logos/Arsova.png"
-import IESolucionesLogo from "../assets/logos/IESoluciones.png"
+import IESolucionesLogo from "../assets/logos/ieSoluciones.png"
 import TecLogo from "../assets/logos/tec.webp"
 
 export const experienceData = [
