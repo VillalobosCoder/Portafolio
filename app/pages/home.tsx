@@ -9,7 +9,7 @@ import { useLanguage } from "../context/lenguage-context";
 
 function Home() {
     const [isLightTheme, setIsLightTheme] = useState(false);
-    const { translations } = useLanguage();
+    //const { translations } = useLanguage();
 
     const openPdf = () => {
         window.open('/docs/CV.pdf', '_blank');
@@ -38,7 +38,7 @@ function Home() {
                 </div>
 
                 <p className="my-5 text-center">
-                    {translations.description}
+                Ingeniero en sistemas computacionales especializado en ingeniería de software, con experiencia en desarrollo Frontend y aplicaciones móviles.
                 </p>
                 <div className="flex flex-wrap justify-center my-10">
                     {contactData.map((contact, index) => (

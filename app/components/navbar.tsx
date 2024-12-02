@@ -71,9 +71,9 @@ function Navbar() {
                         <li className={`cursor-pointer text-xl hover:transition-all duration-500 transform hover:scale-110 ${isDarkMode ? 'hover:text-yellow-200' : 'hover:text-blue-800'} `} onClick={handleTheme}>
                             {isDarkMode ? <FaSun /> : <FaMoon />}
                         </li>
-                        <li className="cursor-pointer text-xl hover:transition-all duration-500 transform hover:scale-110 hover:text-violet-600" onClick={toggleLanguage}>
+                        {/*<li className="cursor-pointer text-xl hover:transition-all duration-500 transform hover:scale-110 hover:text-violet-600" onClick={toggleLanguage}>
                             <FaLanguage/>
-                        </li>
+                        </li>*/}
                     </ul>
                     <div className="lg:hidden md:flex flex-col justify-end">
                         <button onClick={handleNavbar} className="text-2xl">
