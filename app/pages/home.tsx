@@ -9,8 +9,9 @@ import "aos/dist/aos.css";
 function Home() {
     const [isLightTheme, setIsLightTheme] = useState(false);
 
+
     const openPdf = () => {
-        window.open('/docs/CV.pdf', '_blank');
+        window.open('./docs/CV.pdf', '_blank');
     }
 
     useEffect(() => {
