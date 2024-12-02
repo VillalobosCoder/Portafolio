@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEffect } from 'react';
+import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import en from '../../public/locales/en.json';
 import es from '../../public/locales/es.json';
 
@@ -8,7 +8,7 @@ const LanguageContext = createContext({
   toggleLanguage: () => {},
 });
 
-export const LanguageProvider = ({ children }: any) => {
+export const LanguageProvider = ({ children }:  { children: ReactNode }) => {
   const [language, setLanguage] = useState('en');
   const [translations, setTranslations] = useState(en);
 

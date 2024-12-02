@@ -5,11 +5,9 @@ import { contactData } from "../constants/contact-data";
 import { FaFileImport } from "react-icons/fa6";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useLanguage } from "../context/lenguage-context";
 
 function Home() {
     const [isLightTheme, setIsLightTheme] = useState(false);
-    //const { translations } = useLanguage();
 
     const openPdf = () => {
         window.open('/docs/CV.pdf', '_blank');

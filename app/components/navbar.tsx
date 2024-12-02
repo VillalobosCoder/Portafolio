@@ -1,16 +1,15 @@
 'use client';
 
 import { navItemsEs } from "../constants/navbar-data";
-import { FaBars, FaXmark, FaMoon, FaLanguage, FaSun } from "react-icons/fa6";
+import { FaBars, FaXmark, FaMoon, FaSun } from "react-icons/fa6";
 import { useEffect, useState } from "react";
-import { useLanguage } from "../context/lenguage-context";
 
 function Navbar() {
     const [menuDrawerIsOpen, setMenuDrawerIsOpen] = useState(false);
     const handleNavbar = () => { setMenuDrawerIsOpen(!menuDrawerIsOpen); }
     const [isDarkMode, setIsDarkMode] = useState(true);
     const [activeSection, setActiveSection] = useState('');
-    const { language, toggleLanguage } = useLanguage();
+
 
     useEffect(() => {
         if (!isDarkMode) {
