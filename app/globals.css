@@ -27,7 +27,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #6e3792;
+  background: #d6303a; 
   border-radius: 10px;
 }
 
@@ -43,10 +43,10 @@ body {
 .titleShine {
   background: linear-gradient(
     to left,
-    #ceabeb 20%,
-    #7953cd 30%,
-    #7953cd 70%,
-    #ceabeb 80%
+    #ffa8a8 20%, 
+    #d6303a 30%,   
+    #d6303a 70%,
+    #ffa8a8 80%
   );
   -webkit-background-clip: text;
   background-clip: text;

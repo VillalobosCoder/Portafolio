@@ -9,20 +9,21 @@ import "aos/dist/aos.css";
 function Home() {
     const [isLightTheme, setIsLightTheme] = useState(false);
 
-
     const openPdf = () => {
         window.open('./docs/CV.pdf', '_blank');
     }
 
     useEffect(() => {
         setIsLightTheme(document.documentElement.classList.contains('light-theme'));
-        const observer = new MutationObserver(() => { setIsLightTheme(document.documentElement.classList.contains('light-theme')); });
+        const observer = new MutationObserver(() => {
+            setIsLightTheme(document.documentElement.classList.contains('light-theme'));
+        });
         observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
         return () => observer.disconnect();
     }, []);
 
     useEffect(() => {
-        AOS.init({duration: 500});
+        AOS.init({ duration: 500 });
     }, []);
 
     return (
@@ -30,23 +31,23 @@ function Home() {
             <div className="w-full lg:max-w-4xl text-center">
                 <div className="inline-block">
                     <h1
-                        className="text-4xl sm:text-6xl lg:text-7xl tracking-wide bg-gradient-to-r from-[#7953cd] to-[#c89eea] text-transparent bg-clip-text p-2 whitespace-nowrap overflow-hidden titleShine"
+                        className="text-4xl sm:text-6xl lg:text-7xl tracking-wide bg-gradient-to-r from-[#d32f2f] to-[#ff5252] text-transparent bg-clip-text p-2 whitespace-nowrap overflow-hidden titleShine"
                     >
                         Alejandro Villalobos
                     </h1>
                 </div>
 
                 <p className="my-5 text-center">
-                Ingeniero en sistemas computacionales especializado en ingeniería de software, con experiencia en desarrollo Frontend y aplicaciones móviles.
+                    Ingeniero en sistemas computacionales especializado en ingeniería de software, con experiencia en desarrollo Frontend y aplicaciones móviles.
                 </p>
                 <div className="flex flex-wrap justify-center my-10">
                     {contactData.map((contact, index) => (
-                        <a key={index} href={contact.link} className={`bg-gradient-to-r ${isLightTheme ? 'from-[#b997cf] to-[#ddc8ee] hover:from-[#c8abdb] hover:to-[#e3cef3]' : 'from-[#6e3792] to-[#c89eea] hover:from-[#8844b6] hover:to-[#d5b8ec]'}  py-1 px-4 mx-3 rounded-full flex justify-center items-center gap-2 mt-5 md:mt-0`}>
+                        <a key={index} href={contact.link} className={`bg-gradient-to-r text-white ${isLightTheme ? 'from-persona-red to-[#ff5252] hover:from-[#c62828] hover:to-[#ff6b6b]' : 'from-persona-red to-[#ff5252] hover:from-[#c62828] hover:to-[#ff6b6b]'}  py-1 px-4 mx-3 rounded-full flex justify-center items-center gap-2 mt-5 md:mt-0`}>
                             <contact.icon size={20} />
                             <p className="text-clip">{contact.title}</p>
                         </a>
                     ))}
-                    <a href={''} onClick={openPdf} className={`bg-gradient-to-r ${isLightTheme ? 'from-[#b997cf] to-[#ddc8ee] hover:from-[#c8abdb] hover:to-[#e3cef3]' : 'from-[#6e3792] to-[#c89eea] hover:from-[#8844b6] hover:to-[#d5b8ec]'}  py-1 px-4 mx-3 rounded-full flex justify-center items-center gap-2 mt-5 md:mt-0`}>
+                    <a href={''} onClick={openPdf} className={`bg-gradient-to-r text-white ${isLightTheme ? 'from-persona-red to-[#ff5252] hover:from-[#c62828] hover:to-[#ff6b6b]' : 'from-persona-red to-[#ff5252] hover:from-[#c62828] hover:to-[#ff6b6b]'}  py-1 px-4 mx-3 rounded-full flex justify-center items-center gap-2 mt-5 md:mt-0`}>
                         <FaFileImport size={20} />
                         <p className="text-clip">CV</p>
                     </a>
@@ -54,7 +55,6 @@ function Home() {
             </div>
         </div>
     );
-
 };
 
 export default Home;

@@ -10,9 +10,9 @@ import "aos/dist/aos.css";
 function Projects() {
 
     useEffect(() => {
-        AOS.init({duration: 500});
-      }, []);
-      
+        AOS.init({ duration: 500 });
+    }, []);
+
     return (
         <div className="lg:px-0 mt-12 lg:mt-40" id="projects">
             <div className="flex justify-center items-center">
@@ -22,15 +22,20 @@ function Projects() {
 
             <div className="flex flex-col items-center mt-12 ">
                 {projectsData.map((item, index) => (
-                    <div key={index} className="w-full max-w-4xl mb-5 p-5 rounded-lg hover:animate-shadow-fix transition-all"  data-aos="fade-up">
+                    <div key={index} className="w-full max-w-4xl mb-5 p-5 rounded-lg hover:animate-shadow-fix transition-all " data-aos="fade-up">
                         <div className="flex flex-col lg:flex-row items-center lg:items-start">
                             <Image src={item.image} alt={item.title} width={400} height={300} className="rounded-lg w-full lg:w-1/2 mb-4 lg:mb-0" />
                             <div className="lg:ml-8 w-full lg:w-1/2 text-center lg:text-left">
                                 <div className="flex justify-between">
                                     <h5 className="text-xl font-semibold">{item.title}</h5>
                                     <div className="flex gap-5 mr-2">
-                                        <a href={item.linkGit}><FaGithub className="text-2xl cursor-pointer hover:transition-all duration-500 transform hover:scale-110" /></a>
-                                        {item.dev ? <a href={item.likDep}><FaLink className="text-2xl cursor-pointer hover:transition-all duration-500 transform hover:scale-110" /></a> : null}
+                                        <a href={item.linkGit} className="transition-colors">
+                                            <FaGithub className="text-2xl cursor-pointer hover:transition-all duration-500 transform hover:scale-110" />
+                                        </a>
+                                        {item.dev ?
+                                            <a href={item.likDep} className="transition-colors">
+                                                <FaLink className="text-2xl cursor-pointer hover:transition-all duration-500 transform hover:scale-110" />
+                                            </a> : null}
                                     </div>
                                 </div>
                                 <p className="mt-2 text-start">{item.description}</p>
@@ -50,6 +55,5 @@ function Projects() {
         </div>
     );
 }
-
 
 export default Projects;
