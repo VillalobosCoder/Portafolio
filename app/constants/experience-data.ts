@@ -1,15 +1,24 @@
 import ArsovaLogo from "../assets/logos/Arsova.png"
 import IESolucionesLogo from "../assets/logos/ieSoluciones.png"
 import TecLogo from "../assets/logos/tec.webp"
+import GamanLogo from "../assets/logos/Gaman.ico"
 
 export const experienceData = [
+    {
+        title: "Gaman Solutions",
+        link: "https://gamansolutions.mx/es",
+        logo: GamanLogo,
+        position: "Desarrollador Full Stack",
+        date: "Junio 2025 - Actualidad",
+        description: "Desarrollo de aplicaciones web con Node.js y Angular aplicando arquitectura hexagonal. Implementación y consumo de APIs REST, pruebas unitarias y buenas prácticas de desarrollo orientadas a escalabilidad y mantenibilidad del software."
+    },
     {
         title: "Arsova",
         link: "https://arsova.mx/",
         logo: ArsovaLogo,
-        position: "Desarrollador frontend y movil (React Native)",
+        position: "Desarrollador frontend y movil (Next.Js y React Native)",
         date: "Junio 2024 - Abril 2025",
-        description: "Desarrollo de aplicaciones móviles en React Native usando Expo, integrando funcionalidades en segundo plano, mapas interactivos y consumo de APIs REST. Implementación de interfaces de usuario con NextJS en el frontend Y Participación en el diseño UI/UX, utilizando Figma como herramienta de diseño. ",
+        description: "Desarrolle aplicaciones móviles en React Native usando Expo, integrando funcionalidades en segundo plano, mapas interactivos y consumo de APIs REST. Implementación de interfaces de usuario con Next.Js en el frontend Y Participación en el diseño UI/UX, utilizando Figma como herramienta de diseño. ",
     },
     {
         title: "IESoluciones",
@@ -17,7 +26,7 @@ export const experienceData = [
         logo: IESolucionesLogo,
         position: "Desarrollador movil (Android)",
         date: "Enero 2023 - Julio 2023",
-        description: "Desarrollo de aplicaciones móviles en Android utilizando Kotlin y el patrón de diseño MVVM. Desarrollo y depuración en Android Studio, con enfoque en buenas prácticas y rendimiento de aplicaciones.",
+        description: "Desarrolle aplicaciones móviles en Android utilizando Kotlin y el patrón de diseño MVVM. Desarrollo y depuración en Android Studio, con enfoque en buenas prácticas y rendimiento de aplicaciones.",
     },
     {
         title: "Instituto Tecnologico de Culiacan",
