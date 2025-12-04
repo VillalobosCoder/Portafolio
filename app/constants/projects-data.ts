@@ -2,7 +2,7 @@ import Expressjs from "../assets/icons/Express";
 import Java from "../assets/icons/Java";
 import JavaScript from "../assets/icons/JavaScript";
 import MongoDB from "../assets/icons/MongoDB";
-import React from "../assets/icons/Reactl";
+import React from "../assets/icons/React";
 import MicrosoftSQLServer from "../assets/icons/SqlServer";
 import TailwindCSS from "../assets/icons/Tailwind";
 import TypeScript from "../assets/icons/TypeScript";
