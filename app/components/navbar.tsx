@@ -65,7 +65,7 @@ function Navbar() {
         <div className="flex justify-between items-center">
           <div className="bg-white rounded-full p-1 text-base tracking-tight text-primary hidden md:block">
             <Image
-              src="/Loguito.ico"
+              src="/Loguito.png"
               alt="Logo"
               width={23}
               height={23}
