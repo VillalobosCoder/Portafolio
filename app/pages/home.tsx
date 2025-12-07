@@ -50,7 +50,7 @@ function Home() {
         <div className="mb-12 max-w-2xl mx-auto">
           <p className="text-base sm:text-lg leading-relaxed">
             Ingeniero en sistemas computacionales especializado en{" "}
-            <span className="text-foreground font-semibold">ingeniería de software</span>, con más de dos años en{" "}
+            <span className="text-foreground font-semibold">ingeniería de software</span>, con más de dos años de experiencia en{" "}
             <span className="text-primary font-semibold">desarrollo FullStack</span>.
           </p>
         </div>
