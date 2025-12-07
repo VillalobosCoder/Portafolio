@@ -3,6 +3,7 @@
 import { navItemsEs } from "../constants/navbar-data";
 import { Sun, Moon, Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import Logo from "../assets/logos/Loguito.png";
 import Image from "next/image";
 
 function Navbar() {
@@ -65,7 +66,7 @@ function Navbar() {
         <div className="flex justify-between items-center">
           <div className="bg-white rounded-full p-1 text-base tracking-tight text-primary hidden md:block">
             <Image
-              src="/Loguito.png"
+              src={Logo}
               alt="Logo"
               width={23}
               height={23}
