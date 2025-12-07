@@ -12,11 +12,11 @@ import VrWondersTeamImage from "../assets/projects/VrWonders.png";
 import ChatApp from "../assets/projects/ChatApp.png"
 
 const TAGS = {
-  Java: { name: "Java", classL: "bg-orange-900", icon: Java },
+  Java: { name: "Java", classL: "bg-slate-800", icon: Java },
   React: { name: "React", classL: "bg-sky-900", icon: React },
   Vite: { name: "Vite", classL: "bg-violet-950", icon: Vite },
   MongoDB: { name: "MongoDB", classL: "bg-green-900", icon: MongoDB },
-  Express: { name: "Expressjs", classL: "bg-gray-600", icon: Expressjs },
+  Express: { name: "Express.Js", classL: "bg-gray-600", icon: Expressjs },
   SQLServer: {name: "SQL Server", classL: "bg-gray-500", icon: MicrosoftSQLServer},
   Tailwind: {name: "TailwindCSS", classL: "bg-sky-900", icon: TailwindCSS},
   JavaScript: {name: "JavaScript", classL: "bg-yellow-800", icon: JavaScript},
@@ -26,7 +26,7 @@ const TAGS = {
 export const projectsData = [
   {
     title: "Compilador",
-    description: "Este proyecto es una implementación parcial de un compilador desarrollado como parte de un proyecto escolar. El objetivo principal es profundizar en la lógica de programación utilizando el lenguaje Java, y abordar algunas de las etapas fundamentales de un compilador: Analizador Léxico, Analizador Sintáctico, Analizador Semántico y Generador de Código Intermedio.",
+    description: "Proyecto parcial de un compilador desarrollado para un trabajo escolar. Su objetivo es profundizar en la lógica de programación en Java y cubrir etapas esenciales de un compilador: análisis léxico, sintáctico, semántico y generación de código intermedio.",
     image: CompiladorImage,
     linkGit: "https://github.com/VillalobosCoder/Compilador",
     likDep: "",
@@ -36,7 +36,7 @@ export const projectsData = [
   },
   {
     title: "VrWondersTeam",
-    description: "Este proyecto es una landing page como parte de un proyecto escolar para una feria de ingenierias, la cual se realizo para promocionar y dar mas informacion de nuestro proyecto llamado VrWonders.",
+    description: "Landing page como parte de un proyecto escolar para una feria de ingenierias, la cual se realizo para promocionar y dar mas informacion de nuestro proyecto llamado VrWonders.",
     image: VrWondersTeamImage,
     linkGit: "https://github.com/VillalobosCoder/VrWondersTeam",
     likDep: "https://vrwondersteam.onrender.com/",

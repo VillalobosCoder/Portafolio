@@ -1,14 +1,26 @@
 function Footer() {
-    return (
-        <footer className="mt-20 border-t border-persona-red py-10">
-            <div className="flex justify-center items-center">
-                <h3 className="text-md font-semibold mb-4 text-center">© 2024 VillalobosCoder.
-                    {" "}
-                    <a href="#aboutme" className="text-persona-red hover:text-persona-dark-red transition-colors">Contactame</a>.
-                </h3>
-            </div>
-        </footer>
-    );
+  return (
+    <footer className="border-t border-border py-12 mt-24 bg-card">
+      <div className="container mx-auto px-4 flex justify-center">
+        <div className="text-center">
+          <p className="text-sm text-muted-foreground">
+            © 2025{" "}
+            <span className="text-foreground font-semibold">
+              VillalobosCoder
+            </span>
+            .
+            <br />
+            <a
+              href="#aboutme"
+              className="text-primary hover:text-primary/80 transition-colors font-medium mt-2 inline-block"
+            >
+              Contactame
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>   
+  );
 }
 
 export default Footer;
