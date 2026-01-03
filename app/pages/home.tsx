@@ -51,7 +51,7 @@ function Home() {
           <p className="text-base sm:text-lg leading-relaxed">
             Ingeniero en sistemas computacionales especializado en{" "}
             <span className="text-foreground font-semibold">ingeniería de software</span>, con más de dos años de experiencia en{" "}
-            <span className="text-primary font-semibold">desarrollo FullStack</span>.
+            <span className="text-primary font-semibold">desarrollo fullstack</span>.
           </p>
         </div>
         <div className="flex flex-wrap justify-center gap-3">
