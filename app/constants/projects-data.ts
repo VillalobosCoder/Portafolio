@@ -9,7 +9,11 @@ import TypeScript from "../assets/icons/TypeScript";
 import Vite from "../assets/icons/Vite";
 import CompiladorImage from "../assets/projects/Compilador.png";
 import VrWondersTeamImage from "../assets/projects/VrWonders.png";
-import ChatApp from "../assets/projects/ChatApp.png"
+import ChatApp from "../assets/projects/ChatApp.png";
+import BinaryTranslate from "../assets/projects/BinaryTranslate.png";
+import SMBridge from "../assets/projects/SMBridge.png";
+import Kotlin from "../assets/icons/Kotlin";
+import Android from "../assets/icons/Android";
 
 const TAGS = {
   Java: { name: "Java", classL: "bg-slate-800", icon: Java },
@@ -17,39 +21,77 @@ const TAGS = {
   Vite: { name: "Vite", classL: "bg-violet-950", icon: Vite },
   MongoDB: { name: "MongoDB", classL: "bg-green-900", icon: MongoDB },
   Express: { name: "Express.Js", classL: "bg-gray-600", icon: Expressjs },
-  SQLServer: {name: "SQL Server", classL: "bg-gray-500", icon: MicrosoftSQLServer},
-  Tailwind: {name: "TailwindCSS", classL: "bg-sky-900", icon: TailwindCSS},
-  JavaScript: {name: "JavaScript", classL: "bg-yellow-800", icon: JavaScript},
-  TypeScript: {name: "TypeScript", classL: "bg-sky-900", icon: TypeScript},
+  SQLServer: {
+    name: "SQL Server",
+    classL: "bg-gray-500",
+    icon: MicrosoftSQLServer,
+  },
+  Tailwind: { name: "TailwindCSS", classL: "bg-sky-900", icon: TailwindCSS },
+  JavaScript: { name: "JavaScript", classL: "bg-yellow-800", icon: JavaScript },
+  TypeScript: { name: "TypeScript", classL: "bg-sky-900", icon: TypeScript },
+  Kotlin: { name: "Kotlin", classL: "bg-purple-900", icon: Kotlin },
+  Android: {
+    name: "Android",
+    classL: "bg-green-900",
+    icon: Android,
+  },
 };
 
 export const projectsData = [
   {
     title: "Compilador",
-    description: "Proyecto parcial de un compilador desarrollado para un trabajo escolar. Su objetivo es profundizar en la lógica de programación en Java y cubrir etapas esenciales de un compilador: análisis léxico, sintáctico, semántico y generación de código intermedio.",
+    description:
+      "Proyecto parcial de un compilador desarrollado para un trabajo escolar. Su objetivo es profundizar en la lógica de programación en Java y cubrir etapas esenciales de un compilador: análisis léxico, sintáctico, semántico y generación de código intermedio.",
     image: CompiladorImage,
     linkGit: "https://github.com/VillalobosCoder/Compilador",
     likDep: "",
     dev: false,
     tecs: [TAGS.Java],
-
+  },
+  {
+    title: "SMBridge",
+    description:
+      "Proyecto parcial de un compilador desarrollado para un trabajo escolar. Su objetivo es profundizar en la lógica de programación en Java y cubrir etapas esenciales de un compilador: análisis léxico, sintáctico, semántico y generación de código intermedio.",
+    image: SMBridge,
+    linkGit: "https://github.com/VillalobosCoder/SMBridge.git",
+    likDep: "",
+    dev: false,
+    tecs: [TAGS.Android, TAGS.Kotlin],
+  },
+  {
+    title: "ChatApp",
+    description:
+      "Este proyecto escolar es una aplicación de chat en tiempo real, desarrollada con React, Express, Socket.io y MongoDB. La aplicación permite a los usuarios registrarse, iniciar sesión y chatear con en tiempo real.",
+    image: ChatApp,
+    linkGit: "https://github.com/VillalobosCoder/Proyecto-chat",
+    likDep: "",
+    dev: false,
+    tecs: [
+      TAGS.React,
+      TAGS.Express,
+      TAGS.MongoDB,
+      TAGS.JavaScript,
+      TAGS.Tailwind,
+    ],
+  },
+  {
+    title: "Binary Translate",
+    description:
+      "Proyecto que convierte datos de forma instantánea entre binario, decimal, hexadecimal y texto.",
+    image: BinaryTranslate,
+    linkGit: "https://github.com/VillalobosCoder/binary_translate.git",
+    likDep: "https://binary-translate.vercel.app/",
+    dev: true,
+    tecs: [TAGS.React, TAGS.Vite, TAGS.TypeScript, TAGS.Tailwind],
   },
   {
     title: "VrWondersTeam",
-    description: "Landing page como parte de un proyecto escolar para una feria de ingenierias, la cual se realizo para promocionar y dar mas informacion de nuestro proyecto llamado VrWonders.",
+    description:
+      "Landing page como parte de un proyecto escolar para una feria de ingenierias, la cual se realizo para promocionar y dar mas informacion de nuestro proyecto llamado VrWonders.",
     image: VrWondersTeamImage,
     linkGit: "https://github.com/VillalobosCoder/VrWondersTeam",
     likDep: "https://vrwondersteam.onrender.com/",
     dev: true,
     tecs: [TAGS.React, TAGS.Vite, TAGS.TypeScript, TAGS.Tailwind],
-  },
-  {
-    title: "ChatApp",
-    description: "Este proyecto escolar es una aplicación de chat en tiempo real, desarrollada con React, Express, Socket.io y MongoDB. La aplicación permite a los usuarios registrarse, iniciar sesión y chatear con en tiempo real.",
-    image: ChatApp,
-    linkGit: "https://github.com/VillalobosCoder/Proyecto-chat",
-    likDep: "",
-    dev: false,
-    tecs: [TAGS.React, TAGS.Express, TAGS.MongoDB, TAGS.JavaScript, TAGS.Tailwind],
   },
 ];
