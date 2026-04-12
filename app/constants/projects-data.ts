@@ -51,7 +51,7 @@ export const projectsData = [
   {
     title: "SMBridge",
     description:
-      "Proyecto parcial de un compilador desarrollado para un trabajo escolar. Su objetivo es profundizar en la lógica de programación en Java y cubrir etapas esenciales de un compilador: análisis léxico, sintáctico, semántico y generación de código intermedio.",
+      "SMBridge es un gestor de archivos en red para Android que elimina la fricción de acceder a recursos compartidos mediante una interfaz limpia y moderna usando SMB.",
     image: SMBridge,
     linkGit: "https://github.com/VillalobosCoder/SMBridge.git",
     likDep: "",
